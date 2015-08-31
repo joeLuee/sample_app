@@ -35,9 +35,9 @@ gem 'will_paginate', '3.0.7'
 
 gem 'bootstrap-will_paginate', '0.0.10'
 
-gem 'capistrano-rails', :group => :development
+# gem 'capistrano-rails', :group => :development
 
-gem 'Capistrano-passenger', :group => :development
+# gem 'Capistrano-passenger', :group => :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -66,4 +66,6 @@ group :test do
 	gem 'capybara', '2.4.4'
 end
 
-
+group :production do 
+	gem 'pg', '0.18.2'
+end
